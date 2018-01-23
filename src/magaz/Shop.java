@@ -7,6 +7,7 @@ import magaz.sportgoods_.Dress;
  * Created by java on 19.01.2018.
  */
 public class Shop {
+    private String name;
     private Boots sportBoots;
 
     private Dress dress;
@@ -33,5 +34,13 @@ public class Shop {
 
     public void setDress(Dress dress) {
         this.dress = dress;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

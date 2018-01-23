@@ -8,6 +8,8 @@ public class Boots {
     private String brend;
     private int price;
     private int count;
+    private Info info;
+
 
 
 
@@ -23,6 +25,22 @@ public class Boots {
         this.size = size;
         this.brend = brend;
         this.price = price;
+    }
+
+    public Boots(int size, String brend, int price, int count, Info info) {
+        this.size = size;
+        this.brend = brend;
+        this.price = price;
+        this.count = count;
+        this.info = info;
+    }
+
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
     }
 
     public int getSize() {
@@ -56,4 +74,8 @@ public class Boots {
     public void setCount(int count) {
         this.count = count;
     }
+
+
+
+
 }
